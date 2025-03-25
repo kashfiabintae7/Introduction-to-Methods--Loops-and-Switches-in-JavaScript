@@ -1,0 +1,73 @@
+.hero-banner {
+  align-items: center;
+  display: flex;
+  height: 900px;
+  position: relative;
+  justify-content: center;
+  z-index: -1;
+}
+
+.hero-banner__title {
+  color: white;
+  font-size: 100px;
+  font-weight: 700;
+  padding: 0 20px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-banner__stroked-title {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+.hero-banner__image {
+  border-radius: 20px;
+  position: fixed;
+  transform: rotate(-15deg);
+  width: 600px;
+}
+
+.content {
+  color: whitesmoke;
+  text-shadow: 4px 3px 20px white;
+  background-image: url(https://images7.alphacoders.com/115/1153157.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 45px;
+  padding: 10px 80px;
+  height: 100vh;
+}
+
+body {
+  background-color: darkred;
+  font-family: sans-serif, Arial;
+  font-style: italic;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  box-shadow: 2px 4px 20px black;
+}
+
+p {
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  font-size: 35px;
+  color: rgba(114, 219, 146, 0.726);
+  text-shadow: 2px 4px 20px lawngreen;
+  background-color: rgba(207, 61, 110, 0.418);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+#contents {
+  font-family: "cursive";
+  font-size: 40px;
+  color: whitesmoke;
+  padding: 30px;
+  text-align: center;
+}

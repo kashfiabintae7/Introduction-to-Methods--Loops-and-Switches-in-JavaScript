@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="styles.css" />
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="hero-banner">
+      <div class="hero-banner__title" aria-hidden="true">
+        JavaScript String Methods & Loops
+      </div>
+      <img
+        class="hero-banner__image"
+        src="https://www.pixel4k.com/wp-content/uploads/2024/03/secret-door-art-4k_1710081391-2048x1153.jpg"
+      />
+      <h1 class="hero-banner__title hero-banner__stroked-title">
+        JavaScript String Methods & Loops
+      </h1>
+    </div>
+
+    <div class="content">
+      Numbers from 1 to 10 :
+      <p id="result"></p>
+      <div id="contents">
+        <div style="padding: 10px" id="contenta"><h3></h3></div>
+        <div style="padding: 10px" id="contentb"><h3></h3></div>
+        <div style="padding: 10px" id="contentc"><h3></h3></div>
+        <div style="padding: 10px" id="contentd"><h3></h3></div>
+        <div style="padding: 10px" id="contente"><h3></h3></div>
+      </div>
+    </div>
+
+    <script>
+      var number = "";
+
+      for (i = 1; i < 11; i++) {
+        number = number + i + "<br>";
+      }
+
+      document.getElementById("result").innerHTML = number;
+
+      document.getElementById("contenta").innerHTML =
+        "The Random Value is: " + Math.floor(Math.random() * 100) + "<br>";
+
+      var date = new Date();
+      document.getElementById("contentb").innerHTML =
+        "The Current Year is: " + date.getFullYear() + "<br>";
+      document.getElementById("contentc").innerHTML =
+        "The Current Month is: " + date.getMonth() + "<br>";
+      document.getElementById("contentd").innerHTML =
+        "Today's Date is: " + date.getDate() + "<br>";
+      document.getElementById("contente").innerHTML =
+        "The Current Time is: " +
+        date.getHours() +
+        ":" +
+        date.getMinutes() +
+        ":" +
+        date.getSeconds() +
+        "<br>";
+    </script>
+  </body>
+</html>
